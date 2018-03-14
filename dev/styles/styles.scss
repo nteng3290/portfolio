@@ -1,0 +1,59 @@
+@import "./partials/variables";
+
+html{
+    font-family: $main-text;
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+}
+h1,
+h2,
+h3,
+h4{
+    margin: 0;
+}
+p{
+    line-height: 1.6;
+}
+.wrapper{
+    max-width: 1180px;
+    width: 80%;
+    margin: 0 auto;
+    @media (max-width: 480px) {
+        width: 90%;
+    }
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+img{
+    width: 100%;
+    display: block;
+}
+ul{
+    list-style-type: none;
+    padding:0;
+    margin: 0;
+    li{
+        margin: 0;
+    }
+}
+.social svg{
+    font-size: 30px;
+}
+.social a:hover{
+    color: $secondary-accent;
+}
+
+
+@import "./partials/animation";
+@import "./partials/setup";
+@import "./partials/buttons";
+@import "./partials/background";
+@import "./partials/nav";
+@import "./partials/main";
+@import "./partials/contact";
+@import "./partials/footer"
+

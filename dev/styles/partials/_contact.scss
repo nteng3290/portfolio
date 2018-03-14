@@ -1,0 +1,90 @@
+.contact{
+    background: $bg-accent;
+    color:white;
+    position: relative;
+    margin-top: 100px;
+}
+.contact .wrapper{
+    @extend .flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 50px 0;
+    @media (max-width: 480px) {
+        flex-direction: column;
+    }
+}
+.titleText{
+    top: 50px;
+    left:50px;
+    color:white;
+    position: absolute;
+    z-index:8;
+    @media (max-width: 480px) {
+        position: relative;
+        top:0;
+        left:0;
+        margin-bottom:60px;
+    }
+    h2{
+        text-transform: uppercase;
+    }
+}
+.decor{
+    top: 30px;
+    left: 30px;
+    width: 30%;
+    position: absolute;
+    z-index: 1;
+    -webkit-animation: wobble 2s 1s infinite both;
+    animation: wobble 2s 1s infinite both;
+    @media (max-width: 480px) {
+        width:80%;
+    }
+}
+form.contactForm{
+    z-index: 5;
+    width: 70%;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "fname lname"
+        "email email"
+        "message message"
+        "submit submit";
+    @media (max-width: 480px) {
+        width: 100%;
+    }
+    .firstName{
+        grid-area: fname;
+    }
+    .lastName{
+        grid-area: lname;
+    }
+    .email{
+        grid-area: email;
+    }
+    .message{
+        grid-area: message;
+    }
+    button{
+        grid-area: submit;
+        width: 100%;
+    }
+    label{
+        display: block;
+        margin: 0;
+        width: 100px;
+    }
+    input{
+        width: 100%;
+        background: none;
+        border:none;
+        border-bottom: 2px solid $accent;
+        margin: 10px 0;
+        color: white;
+    }
+    input:focus{
+        color:white;
+    }
+}
