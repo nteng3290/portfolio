@@ -35,6 +35,9 @@ body{
         align-items: center;
         justify-content: center;
         position: relative;
+        @media (max-width: 480px) {
+            display: none;
+        }
     }
     .arrowSlide{
         position: absolute;

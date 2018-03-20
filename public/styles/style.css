@@ -611,6 +611,9 @@ body {
     align-items: center;
     justify-content: center;
     position: relative; }
+    @media (max-width: 480px) {
+      .banner .arrowDown {
+        display: none; } }
   .banner .arrowSlide {
     position: absolute;
     -webkit-animation: slide 2s linear infinite;
@@ -1078,12 +1081,3 @@ form.contactForm {
     color: white; }
   form.contactForm input:focus {
     color: white; }
-
-footer {
-  margin: 0;
-  padding: 10px 0;
-  background: rgba(44, 44, 83, 0.87); }
-  footer p {
-    color: white;
-    text-transform: uppercase;
-    text-align: center; }
