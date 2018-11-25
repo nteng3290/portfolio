@@ -72,24 +72,25 @@ header{
 .menu{
     width: 60%;
 }
-#top-menu li a::after{
-    content:'';
-    background: $accent-transparent;
-    display: none;
-    position: absolute;
-    width: 100px;
-    height: 10px;
-    bottom: 30px;
-}
+// #top-menu li a::after{
+//     content:'';
+//     // background: $accent-transparent;
+//     border-bottom: 3px solid $accent;
+//     display: none;
+//     position: absolute;
+//     width: 100px;
+//     height: 10px;
+//     bottom: 20px;
+// }
 #top-menu li.active a{
     color: $secondary-accent;
 }
-#top-menu li.active a::after{
-    display:block;
-    @media (max-width: 480px) {
-        display:none;
-    }
-}
+// #top-menu li.active a::after{
+//     display:block;
+//     @media (max-width: 480px) {
+//         display:none;
+//     }
+// }
 .mainNav{
     margin-left: 20px;
     @extend .flex;
@@ -169,11 +170,6 @@ header{
     transition: all 0.5s ease;
     width: 200px;
     text-transform: uppercase;
-    // &:hover{
-    //     color: white;
-    //     background: rgba(255,255,255,0.5);
-    //     border: 2px solid white;
-    // }
     @media (max-width: 480px) {
         width: 120px;
         font-size: 12px;

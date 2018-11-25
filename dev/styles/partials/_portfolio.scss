@@ -1,0 +1,77 @@
+.portfolio{
+    width: 80%;
+    margin: 0 auto;
+    h2{
+        margin-bottom: 20px;
+    }
+}
+.project{
+    margin: 0 auto;
+    display: grid;
+    // grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 20px; 
+    .third{
+        // width: 33%;
+        border: 2px solid white;
+    }
+}
+.portfolio-pieces{
+    margin-top: 20px;
+    .description{
+        background: $accent;
+        padding: 10px 20px;
+    }
+    .skills{
+        background: $secondary_accent;
+        padding: 15px;
+        outline: 1px solid white;
+        outline-offset: -5px;
+        li{
+            text-transform: uppercase;
+        }
+    }
+    .links{
+        position: relative;
+        bottom: 0;
+        right: 0;
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+}
+.align-left{
+    .description{
+        background: $accent;
+        grid-column-start: 3;
+        grid-column-end: 5;
+    }
+}
+.align-right{
+    .description{
+        background: $accent;
+        grid-column-start: 1;
+        grid-column-end: 3; 
+    }
+    .skills{
+        background: $tertiary_accent;
+    }
+}
+.scroll-up{
+    width: 228px;
+    height: 228px;
+    overflow-y: scroll;
+}
+.align-center{
+    .description{
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    .mock-up{
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+    .scroll-up{
+        width: 100%;
+    }
+}

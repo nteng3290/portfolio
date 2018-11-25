@@ -35,8 +35,6 @@
     width: 30%;
     position: absolute;
     z-index: 1;
-    -webkit-animation: wobble 2s 1s infinite both;
-    animation: wobble 2s 1s infinite both;
     @media (max-width: 480px) {
         width:80%;
     }
